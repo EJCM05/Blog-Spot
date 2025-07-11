@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+.venv/  # Asegúrate de que esta línea esté si tu entorno virtual se llama .venv
+.venv
+
+# Django
+db.sqlite3
+media/    
+static_collected/
+
+# IDEs
+.idea/ # PyCharm
+.vscode/ # VS Code
+
+# Environment variables
+.env 
+*.log

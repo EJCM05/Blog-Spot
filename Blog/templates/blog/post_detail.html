@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+    <article class="blog-post">
+        <h1 class="display-5 fw-bold">{{ post.title }}</h1>
+        <p class="blog-post-meta">{{ post.published_date|date:"F j, Y" }} por <strong>{{ post.author }}</strong></p>
+        <hr>
+        <p class="lead">{{ post.content|linebreaksbr }}</p> {# Convierte saltos de línea en <br> #}
+        {% if user.is_authenticated and user == post.author %}
+            <div class="mt-4">
+                <a href="{% url 'Blog:post_edit' slug=post.slug %}" class="btn btn-warning">Editar Post</a>
+                <a href="{% url 'Blog:post_delete' slug=post.slug %}" class="btn btn-danger ms-2">Eliminar Post</a>
+            </div>
+        {% endif %}
+        <hr>
+        <a href="{% url 'Blog:post_list' %}" class="btn btn-secondary mt-3">Volver a la Lista de Posts</a>
+    </article>
+{% endblock %}
