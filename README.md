@@ -1,10 +1,10 @@
 # BlogSpot - Un Proyecto de Blog con Django
 
-Este es un proyecto de blog personal desarrollado con el framework web **Django**, diseñado para demostrar mis habilidades en desarrollo web backend y frontend básico, manejo de bases de datos y la implementación de funcionalidades clave en un entorno de práctica.
+Este es un proyecto de blog personal desarrollado con el framework web **Django**, diseñado para demostrar mis habilidades en desarrollo web backend y frontend básico, manejo de bases de datos y la implementación de funcionalidades clave en un entorno de práctica, tuve la sensacion y la necesidad de tener que centrarme en las CBVs Con django, los metodos de autenticacion **auth** y modelos basicos pero potentes. Me centre en las funcionalidades del Backend para llevar a cabo esta practica, Utilice **Bootstrap** para el Frontend con una plantilla predefinida, que me permitiera enforcarme mas en la funcionalidad.
 
 ---
 
-## 🚀 Características Implementadas
+## Características Implementadas
 
 * **Gestión de Posts:**
     * **CRUD completo:** Los usuarios autenticados pueden **Crear**, **Leer**, **Actualizar** y **Eliminar** posts.
@@ -28,10 +28,10 @@ Este es un proyecto de blog personal desarrollado con el framework web **Django*
 
 ## 🛠️ Tecnologías Utilizadas
 
-* **Python 3.11** (o tu versión de Python)
-* **Django 4.x** (o tu versión exacta de Django)
-* **Bootstrap 5**
-* **SQLite3** (Base de datos por defecto)
+* **Python**
+* **Django** 
+* **Bootstrap**
+* **SQLite3**
 
 ---
 
@@ -40,17 +40,8 @@ Este es un proyecto de blog personal desarrollado con el framework web **Django*
 Sigue estos pasos para clonar el proyecto y ejecutarlo en tu máquina local:
 
 1.  **Clonar el repositorio:**
-    ```bash
-    git clone [https://github.com/tu_usuario/DjangoBlogSpot_Portfolio.git](https://github.com/tu_usuario/DjangoBlogSpot_Portfolio.git)
-    cd DjangoBlogSpot_Portfolio
-    ```
 
 2.  **Crear y activar un entorno virtual:**
-    ```bash
-    python -m venv .venv
-    source .venv/bin/activate  # Para Linux/macOS
-    # .venv\Scripts\activate   # Para Windows (en cmd/PowerShell)
-    ```
 
 3.  **Instalar las dependencias:**
     ```bash
@@ -67,28 +58,28 @@ Sigue estos pasos para clonar el proyecto y ejecutarlo en tu máquina local:
     ```bash
     python manage.py runserver
     ```
-
-    Ahora el blog debería estar accesible en tu navegador:
-    * **Blog principal:** `http://127.0.0.1:8000/`
-    * **Panel de Administración:** `http://127.0.0.1:8000/admin/` (usa las credenciales del superusuario)
-
 ---
 
-## 📝 Proceso de Desarrollo y Aprendizajes Clave
+## Proceso de Desarrollo y Aprendizajes Clave
 
 Este proyecto sirvió como una excelente oportunidad para profundizar en varios aspectos fundamentales de Django:
 
 * **Vistas Basadas en Clases (CBVs):** Aprendí a utilizar y personalizar `ListView`, `DetailView`, `CreateView`, `UpdateView` y `DeleteView` para manejar operaciones de datos de manera eficiente, comprendiendo cómo sobrescribir métodos como `get_queryset` y `get_context_data` para adaptar su funcionalidad a requisitos específicos, como el filtrado por categoría.
+
 * **Sistema de Autenticación y Autorización de Django (`django.contrib.auth`):** Implementé el registro, inicio y cierre de sesión, así como la protección de vistas con `LoginRequiredMixin`, entendiendo la importancia de la seguridad en acciones del usuario y el uso de `{% csrf_token %}`.
+
 * **Organización de URLs con Namespaces:** Practiqué la definición de patrones de URL y el uso de `namespaces` (ej. `blog:` para mis URLs de app y `auth:` para las de autenticación de Django) para mantener el proyecto modular y escalable.
+
 * **Diseño de Modelos:** Reforcé el uso de campos como `SlugField` para URLs amigables y `CharField` con `choices` para opciones predefinidas, y cómo se relacionan con el diseño de la base de datos.
+
 * **Gestión de Plantillas:** Aprendí a crear plantillas dinámicas utilizando el lenguaje de plantillas de Django, incluyendo bucles, condicionales y la generación de URLs con `{% url %}`.
+
 * **Control de Versiones:** Utilicé Git para el control de versiones, gestionando el historial del proyecto a través de commits y sincronizándolo con GitHub.
 
 ---
 
-## 📞 Contacto
+## Contacto
 
-* **Tu Nombre Completo**
-* [Tu Perfil de LinkedIn](https://www.linkedin.com/in/tu-perfil) (Recomendado)
-* Tu Correo Electrónico: `tu.correo@example.com`
+* **Eber Josue Colmenares Mendoza**
+* [LinkedIn](https://www.linkedin.com/in/eber-josue-colmenares-mendoza)
+* Correo Electrónico: `ebercolmenares_11@hotmail.com`
